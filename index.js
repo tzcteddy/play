@@ -10,7 +10,6 @@ var cubeRender = (function () {
             var ctx=canvas.getContext('2d');
             ctx.clearRect(0,0,1000,1000);
             ctx.drawImage(img,27,53,330,206);
-            console.log(ctx);
             return ctx;
             //ctx.clearRect(0,0,0,100)
         }
@@ -26,7 +25,6 @@ var cubeRender = (function () {
     }
     function count(index,flag){
         var index=index||0;
-        console.log(index);
         if (flag){
             index = index>=23?0:++index;
         }else {
