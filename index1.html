@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="css/index.min.css">
+    <script>
+        (function () {
+            var winW = document.documentElement.clientWidth || document.body.clientWidth;
+            var desW = 640;
+            if(winW < desW){
+                document.documentElement.style.fontSize = winW / desW * 100 + 'px';
+            }
+        })();
+    </script>
+</head>
+<body>
+    <div class="bgmBtn" id="bgmBtn">
+        <div class="btn"><img src="imgs/music_c0fda01.gif" alt=""></div>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="show inner">
+                    <div class="head">
+                        <img src="imgs/head.jpg" alt="">
+                    </div>
+                    <div class="desc"><span>Hi!</span></div>
+                    <div class="detail">
+                        <p class="self">我是XXX</p>
+                        <p class="need">正寻找一份关于前端的工作</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="info inner">
+                    <div class="head">
+                        <img src="imgs/head.jpg" alt="">
+                    </div>
+                    <div class="desc">个人信息</div>
+                    <div class="detail">
+                        <p><span><img src="imgs/icon_name.png" alt=""></span><span class="msg">姓名：XXX</span></p>
+                        <p><span><img src="imgs/icon_age.png" alt=""></span><span class="msg">年龄：26</span></p>
+                        <p><span><img src="imgs/icon_phone.png" alt=""></span><span class="msg">手机：13718042029</span></p>
+                        <p><span><img src="imgs/icon_email.png" alt=""></span><span class="msg">邮箱：1542533006@qq.com</span></p>
+                        <p><span><img src="imgs/icon_edu.png" alt=""></span><span class="msg">教育水平：本科</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="skills inner">
+                    <div class="head">
+                        <img src="imgs/head.jpg" alt="">
+                    </div>
+                    <div class="desc">专业技能</div>
+                    <div class="detail clear">
+                        <div class="wrap"><canvas id="h5"></canvas></div>
+                        <div class="wrap"><canvas id="js"></canvas></div>
+                        <div class="wrap"><canvas id="jquery"></canvas></div>
+                        <div class="wrap"><canvas id="react"></canvas></div>
+                        <div class="wrap"><canvas id="node"></canvas></div>
+                        <div class="wrap"><canvas id="dot"></canvas></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner">
+                    <div class="head">
+                        <img src="imgs/head.jpg" alt="">
+                    </div>
+                    <div class="desc">项目展示</div>
+                    <div class="works">
+                        <div class="detail">
+                            <div class="img-clip-block">
+                                <div class="img-clip-row  tianmao">
+                                    <a href="#" class="img-clip-wrap">
+                                        <div class="overlay">
+                                            <div class="overlay-content">tianmao demo
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="img-clip-row">
+                                    <a href="#" class="img-clip-wrap bookstore">
+                                        <div class="overlay">
+                                            <div class="overlay-content">simple bookStore
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="img-clip-wrap qq">
+                                        <div class="overlay">
+                                            <div class="overlay-content">QQMusic Demo</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="img-clip-row vote">
+                                    <a href="#" class="img-clip-wrap polygon-clip-rhombus">
+                                        <div class="overlay">
+                                            <div class="overlay-content">vote system</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <svg class="clip-svg">
+                                <defs>
+                                    <clipPath id="clip-diamond-demo" clipPathUnits="objectBoundingBox">
+                                        <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="proDetail">
+                        <div class="tmDetail pro">
+                            <h4 class="title">模仿天猫首页</h4>
+                            <p class="content">
+                                主要运用了htm/css，原生js和部分h5/css3、jquery方法，从中自己利用单例模式简单封装了轮播图插件。
+                            </p>
+                        </div>
+                        <div class="qqDetail pro">
+                            <h4 class="title">模仿QQ音乐</h4>
+                            <p class="content">主要运用了rem布局方式，htm5/css3，jquery方法，本次主要针对移动端的布局方式进行了练习。</p>
+                        </div>
+                        <div class="voteDetail pro">
+                            <h4 class="title">内部投票系统</h4>
+                            <p class="content">本项目利用了bootstrap、reactJS进行布局和控制，后端利用原生node和mongodb做了简单测试，完成了用户的在注册、删除、投票等功能</p>
+                        </div>
+                        <div class="bkDetail pro">
+                            <h4 class="title">书店前后端管理</h4>
+                            <p class="content">本项目利用了bootstrap、AngularJS@1进行布局和控制，后端利用express和mongodb做了简单测试，从而完成了图书的基本操作。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="end">
+                    Thanks!
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <section style="display:none">
+       <audio src="BGM/Great%20Morning.mp3" id="bgm" preload="none" loop autoplay></audio>
+   </section>
+    <section class="swipe-tip">
+       <div><img src="imgs/web-swipe-tip.png" alt=""></div>
+   </section>
+    <section class="return"><div class="back"></div></section>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/waterbubble.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'vertical',
+        loop: true,
+        pagination: '.swiper-pagination',
+        onTransitionEnd: function(swiper){
+            console.log(swiper.activeIndex);
+            $('.back').hide();
+            var inner = $('.inner');
+            inner.each(function (index,item) {
+                if(index == 2){
+                    $('#js').waterbubble({
+                        radius: 50,
+                        data: 0.8,
+                        waterColor: 'rgba(123,104,238, 0.6)',
+                        txt: 'js',
+                        textColor: 'rgba(0, 0, 0, 0.8)'
+                    });
+                    $('#node').waterbubble({
+                        radius: 50,
+                        data: 0.5,
+                        waterColor: 'rgba(255,228,181, 1)',
+                        txt: 'node',
+                        textColor: 'rgba(0, 0, 0, 0.8)'
+                    });
+                    $('#jquery').waterbubble({
+                        radius: 50,
+                        data: 0.6,
+                        waterColor: 'rgba(0,250,154, 1)',
+                        txt: 'jquery',
+                        textColor: 'rgba(0, 0, 0, 0.8)'
+                    });
+                    $('#react').waterbubble({
+                        radius: 50,
+                        data: 0.6,
+                        waterColor: 'rgba(255,192,203, 1)',
+                        txt: 'react',
+                        textColor: 'rgba(0, 0, 0, 0.8)',
+                        animation:true
+                    });
+                    $('#h5').waterbubble({
+                        radius: 50,
+                        data: 0.6,
+                        waterColor: 'rgba(250,250,210, 1)',
+                        txt: 'html/css',
+                        textColor: 'rgba(0, 0, 0, 0.8)',
+                        animation:true
+                    });
+                    $('#dot').waterbubble({
+                        radius: 50,
+                        data: 0.6,
+                        waterColor: 'rgba(	100,149,237, 1)',
+                        txt: '...',
+                        textColor: 'rgba(0, 0, 0, 0.8)',
+                        animation:true
+                    });
+
+                }
+                if((index+1) == swiper.activeIndex){
+                    $(item).css('display','block');
+                }else{
+                    if(swiper.activeIndex == 6){
+                        inner.eq(0).css('display','block');
+                        return;
+                    }
+                    if(swiper.activeIndex == 0){
+                        inner.eq(0).css('display','none');
+                        inner.eq(inner.length-1).css('display','block');
+                        return;
+                    }
+                    $(item).css('display','none');
+                }
+            });
+        }
+    })
+</script>
+</body>
+</html>
