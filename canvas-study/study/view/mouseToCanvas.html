@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标坐标转换为Canvas坐标</title>
+    <script src="../js/libs/require.js"></script>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: linear-gradient(20deg,#FFF,#6FFDFF,#DCFDFF);
+        }
+        #canvas{
+            position: absolute;
+            top: 20px;
+            left: 0;
+            margin: 20px;
+            background: #FFF;
+            border: thin inset rgba(100,150,230,0.5);
+            cursor: pointer;
+        }
+        #readout{
+            margin-top: 10px;
+            margin-left: 10px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<div id="readout"></div>
+<canvas id="canvas" width="500" height="250"></canvas>
+<script src="../js/config.js"></script>
+<script>
+    require(["mouseToCanvas"])
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 100%;
+            height: 100%;
+            background: #FFAC22;
+        }
+        #canvas{
+            margin:0 auto;
+            display: block;
+            width: 375px;
+            padding: 10px;
+            background: linear-gradient(20deg,#FFF,#6FFDFF,#DCFDFF);
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <canvas id="canvas" width="375" height="658">不支持！不支持</canvas>
+</div>
+</body>
+</html>
+<script>
+    let setStyle=(ctx,fillStyle,strokeStyle)=>{
+      ctx.save();
+      ctx.fillStyle=fillStyle;
+      ctx.strokeStyle=strokeStyle;
+      ctx.restore();
+    }
+    var canvas=document.getElementById("canvas");
+    var ctx=canvas.getContext("2d");
+   // ctx.save();
+    ctx.globalAlpha=0.3;
+    ctx.font="40px Arial";
+    //setStyle(ctx,"cornflowerblue","blue");
+    ctx.fillStyle="cornflowerblue";
+    ctx.strokeStyle="blue";
+    ctx.restore();
+    ctx.fillText("华为 p30",canvas.width/2-80,canvas.height/2);
+    ctx.strokeText("华为 p30",canvas.width/2-82,canvas.height/2);
+
+</script>
