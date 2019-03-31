@@ -32,10 +32,11 @@ define(["require","exports","getContext"],function (require,exports,getContext) 
   }
   function drawHand(loc,isHour) {
     var angle=(Math.PI*2)*(loc*60)-Math.PI/2,
-      handRadius=isHour?RADIUS-HAND_TRUNCATION-HOUR_HAND_TRUNCATION:RADIUS-HAND_TRUNCATION;
+      handRadius=isHour?RADIUS - HAND_TRUNCATION - HOUR_HAND_TRUNCATION
+        : RADIUS - HAND_TRUNCATION;
     context.moveTo(canvas.width/2,canvas.height/2);
-    context.lineTo(canvas/2+Math.cos(angle)*handRadius,canvas.height/2+Math.sin(angle)*handRadius);
-    context.strokeStyle="blue";
+    context.lineTo(canvas.width/2+Math.cos(angle)*handRadius,
+                   canvas.height/2+Math.sin(angle)*handRadius);
     context.stroke();
   }
   function drawHands(){
@@ -54,5 +55,5 @@ define(["require","exports","getContext"],function (require,exports,getContext) 
     drawNumerals();
   }
   context.font=FONT_HEIGHT+"px Arial";
-  loop=setInterval(drawClock,1000)
+  var loop=setInterval(drawClock,1000)
 })

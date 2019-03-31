@@ -6,8 +6,8 @@ define(["require","exports","getContext"],function (require,exports,getContext) 
   function windowToCanvas(canvas,x,y) {
     var bbox=canvas.getBoundingClientRect();
     return {
-      x:x-bbox.left*(canvas.width/bbox.width),
-      y:y-bbox.top*(canvas.height/bbox.height)
+      x:x-bbox.left,//*(canvas.width/bbox.width),
+      y:y-bbox.top//*(canvas.height/bbox.height)
     }
   }
   function drawBackground() {
@@ -16,7 +16,7 @@ define(["require","exports","getContext"],function (require,exports,getContext) 
     context.clearRect(0,0,canvas.width,canvas.height);
     context.strokeStyle='lightgray';
     context.lineWidth=0.5;
-    while (i>VERTICAL_LINE_SPACING*4){
+    while (i>VERTICAL_LINE_SPACING){
       context.beginPath();
       context.moveTo(0,i);
       context.lineTo(canvas.width,i);

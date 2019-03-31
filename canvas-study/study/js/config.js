@@ -3,6 +3,11 @@ require.config({
   paths:{
     "getContext":'common/base/getContext',
     "clock":'common/apply_clock',
-    "mouseToCanvas":"common/apply_mouseToCanvas"
+    "mouseToCanvas":"common/apply_mouseToCanvas",
+    "rubberBand":"common/apply_rubberBand",
+    "gradient":"common/apply_gradient",
+    "pattern":"common/apply_pattern",
+    "shadow":"common/apply_shadow",
+    "path":"common/apply_path",
   }
 });
