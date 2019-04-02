@@ -52,3 +52,5 @@
 |moveTo()||
 |lineTo()||
 |drawImage()||
+|getImageData()||
+|putImageData()||

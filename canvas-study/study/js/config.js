@@ -4,11 +4,12 @@ require.config({
     "getContext":'common/base/getContext',
     "clock":'common/apply_clock',
     "mouseToCanvas":"common/apply_mouseToCanvas",
-    "rubberBand":"common/apply_rubberBand",
+    "rubberBandScale":"common/apply_rubberBandScale",
     "gradient":"common/apply_gradient",
     "pattern":"common/apply_pattern",
     "shadow":"common/apply_shadow",
     "path":"common/apply_path",
     "coordinates":"common/apply_coordinates",
+    "rubberBandLine":"common/apply_rubberBandLine",
   }
 });

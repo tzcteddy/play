@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>橡皮筋画线条</title>
+    <script src="../js/libs/require.js"></script>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: linear-gradient(20deg,#FFF,#6FFDFF,#DCFDFF);
+        }
+        #controls{
+            position:absolute;
+            left: 25px;
+            top: 25px;
+        }
+        #canvas{
+            background: #FFF;
+            cursor: pointer;
+            margin-left: 10px;
+            margin-top: 10px;
+            box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas" width="600" height="400"></canvas>
+<div id="controls">
+    Stroke Color:
+    <select id="strokeStyleSelect">
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+        <option value="orange">orange</option>
+        <option value="cornflowerblue">cornflowerblue</option>
+        <option value="goldenrod">goldenrod</option>
+        <option value="navy">navy</option>
+        <option value="purple">purple</option>
+    </select>
+
+    Guidewires:
+    <input id="guidewiresCheckBox" type="checkbox" checked>
+    <input id="eraseAllButton" type="button" value="Erase all">
+</div>
+<script src="../js/config.js"></script>
+<script>
+    require(['rubberBandLine'])
+</script>
+</body>
+</html>
