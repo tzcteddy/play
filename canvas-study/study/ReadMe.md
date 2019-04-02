@@ -54,3 +54,6 @@
 |drawImage()||
 |getImageData()||
 |putImageData()||
+|rect()||
+|arc()||
+|arcTo()||

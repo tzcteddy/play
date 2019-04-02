@@ -28,15 +28,35 @@ define(["require","exports","getContext"],function (require,exports,getContext){
     loc.x>mousedown.x?rubberbandRect.left=mousedown.x:rubberbandRect.left=loc.x;
     loc.y>mousedown.y?rubberbandRect.top=mousedown.y:rubberbandRect.top=loc.y;
   }
-  function drawRubberbandShape(loc){
+  function drawRubberbandShape(loc,arc){
+    if(arc){
+      drawRubberbandArc(loc);
+      return;
+    }
     context.beginPath();
     context.moveTo(mousedown.x,mousedown.y);
     context.lineTo(loc.x,loc.y);
     context.stroke();
   }
+  function drawRubberbandArc(loc) {
+    var angle,
+      radius;
+    if(mousedown.y===loc.y){
+      radius=Math.abs(loc.x-mousedown.x);
+    }else {
+      angle=Math.atan(rubberbandRect.height/rubberbandRect.width);
+      radius=rubberbandRect.height/Math.sin(angle);
+    }
+    context.beginPath();
+    context.arc(mousedown.x,mousedown.y,radius,0,Math.PI*2,false);
+    context.stroke();
+    if(fillCheckbox.checked){
+      context.fill();
+    }
+  }
   function updateRubberband(loc){
     updateRubberbandRectangle(loc);
-    drawRubberbandShape(loc);
+    drawRubberbandShape(loc,true);
   }
   function drawHorizontalLine(y) {
     context.beginPath();

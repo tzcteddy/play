@@ -11,5 +11,6 @@ require.config({
     "path":"common/apply_path",
     "coordinates":"common/apply_coordinates",
     "rubberBandLine":"common/apply_rubberBandLine",
+    "dashboard":"common/apply_dashboard",
   }
 });
