@@ -1,56 +1,54 @@
 
 #### canvas元素属性
-> width
+| 属性| 简介|
+|:---------|:------|
+|width||
+|height||
 
->height
 
 ####canvas元素方法
->getContext()
+| 方法| 简介|
+|:---------|:------|
+|getContext()||
+|toDataURL(type,quality)||
+|toBlob(callback,type,args...)||
 
->toDataURL(type,quality)
-
->toBlob(callback,type,args...)
 
 ####CanvasRenderingContext2D对象所含属性
->canvas
+|||
+|:------|:------|
+|canvas||
+|fillStyle||
+|strokeStyle||
+|font||
+|globalAlpha||
+|globalCompsiteOperation||
+|lineCap||
+|lineWidth||
+|lineJoin||
+|miterLimit||
+|shadowColor||
+|shadowOffsetX||
+|shadowOffsetY||
+|shadowBlur||
+|textAlign||
+|textBaseline||
 
->fillStyle
-
->font
-
->globalAlpha
-
->globalCompsiteOperation
-
->lineCap
-
->lineWidth
-
->lineJoin
-
->miterLimit
-
->shadowBlur
-
->shadowColor
-
->shadowOffsetX
-
->shadowOffsetY
-
->strokeStyle
-
->textAlign
-
->textBaseline
 
 ####CanvasRenderingContext2D方法
->createLinearGradient()
-
->createRadialGradient()
-
->createPattern()
-
->beginPath()
-
->closePath()
+| 方法|简介 |
+|:---------|:------|
+|save()||
+|restore()||
+|fill()||
+|fillRect()||
+|strokeRect()||
+|stroke()||
+|createLinearGradient()||
+|createRadialGradient()||
+|createPattern(image,repeatString)||
+|beginPath()||
+|closePath()||
+|moveTo()||
+|lineTo()||
+|drawImage()||

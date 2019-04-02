@@ -9,5 +9,6 @@ require.config({
     "pattern":"common/apply_pattern",
     "shadow":"common/apply_shadow",
     "path":"common/apply_path",
+    "coordinates":"common/apply_coordinates",
   }
 });
