@@ -15,7 +15,7 @@
 
 
 ####CanvasRenderingContext2D对象所含属性
-|||
+|属性|简介|
 |:------|:------|
 |canvas||
 |fillStyle||
