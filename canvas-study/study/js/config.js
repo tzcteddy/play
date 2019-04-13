@@ -12,5 +12,6 @@ require.config({
     "coordinates":"common/apply_coordinates",
     "rubberBandLine":"common/apply_rubberBandLine",
     "dashboard":"common/apply_dashboard",
+    "quadratic":"common/apply_quadratic",
   }
 });
