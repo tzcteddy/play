@@ -6,7 +6,29 @@
     <script src="../js/libs/require.js"></script>
 </head>
 <body>
-<canvas id="canvas" width="300" height="300"></canvas>
+<div>
+    <select name="" id="startAngleSelect">
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>
+    <select name="" id="sidesSelect">
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>
+    <select name="" id="strokeStyleSelect">
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+    </select>
+    <select name="" id="fillStyleSelect">
+        <option value="yellow">yellow</option>
+        <option value="green">green</option>
+    </select>
+    <input type="button" id="eraseAllButton" value="清空">
+    <input type="checkbox" id="fillCheckBox">填充
+    <input type="checkbox" id="editCheckBox">编辑
+    <input type="checkbox" id="sidesCheckBox">
+</div>
+<canvas id="canvas" width="300" height="600"></canvas>
 <script src="../js/config.js"></script>
 <script>
   require(["dragPolygon"]);
