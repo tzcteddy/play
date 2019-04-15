@@ -13,5 +13,6 @@ require.config({
     "rubberBandLine":"common/apply_rubberBandLine",
     "dashboard":"common/apply_dashboard",
     "quadratic":"common/apply_quadratic",
+    "dragPolygon":"common/apply_dragPolygon",
   }
 });

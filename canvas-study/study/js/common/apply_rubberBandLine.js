@@ -56,7 +56,7 @@ define(["require","exports","getContext"],function (require,exports,getContext){
   }
   function updateRubberband(loc){
     updateRubberbandRectangle(loc);
-    drawRubberbandShape(loc,true);
+    drawRubberbandShape(loc);
   }
   function drawHorizontalLine(y) {
     context.beginPath();
