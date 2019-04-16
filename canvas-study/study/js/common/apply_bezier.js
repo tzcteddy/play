@@ -51,7 +51,7 @@ define(["require","exports","getContext"],function (require,exports,getContext) 
     var bbox=canvas.getBoundingClientRect();
     return {
       x:x-bbox.left*(canvas.width-bbox.width),
-      y:y-bbox.top*(canvas.height/bbox.height)
+      y:y-bbox.top*(canvas.height-bbox.height)
     }
   }
   function saveDrawingSurface(){
