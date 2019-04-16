@@ -14,5 +14,6 @@ require.config({
     "dashboard":"common/apply_dashboard",
     "quadratic":"common/apply_quadratic",
     "dragPolygon":"common/apply_dragPolygon",
+    "bezier":"common/apply_bezier",
   }
 });

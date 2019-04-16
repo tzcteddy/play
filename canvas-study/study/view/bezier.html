@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三次贝塞尔曲线</title>
+    <script src="../js/libs/require.js"></script>
+    <style>
+        body{
+            background: #e3e3e3;
+        }
+        .floatingControls{
+            position: absolute;
+            left: 150px;
+            top: 100px;
+            width: 300px;
+            padding: 20px;
+            border: thin solid rgba(0,0,0,0.3);
+            background: rgba(0,0,200,0.1);
+            color: blue;
+            font-size: 14px;
+            box-shadow: rgba(0,0,0,0.2) 6px 6px 8px;
+            display: none;
+        }
+        .floatingControls p{
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        #controls{
+            position: absolute;
+            top: 25px;
+            left: 25px;
+        }
+        #canvas{
+            background: #FFF;
+            cursor: pointer;
+            margin-left: 10px;
+            margin-top: 10px;
+            box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas" width="605" height="404"></canvas>
+<div id="controls">
+    Stroke color: <select  id="strokeStyleSelect">
+    <option value="red">red</option>
+    <option value="blue">blue</option>
+    <option value="green">green</option>
+    <option value="yellow">yellow</option>
+    Guidewires:
+    <input id="guidewireCheckBox" type="checkbox" checked>
+    <input id="eraseAllButton" type="button" value="清空">
+    <div id="instructions" class="floatingControls">
+        <p>哈哈哈</p>
+        <input id="instructionsOkayButton" type="button" value="Ok">
+        <input id="instructionsNoButton" type="button" value="No">
+    </div>
+</select>
+</div>
+<script src="../js/config.js"></script>
+<script>
+    require(["bezier"])
+</script>
+</body>
+</html>

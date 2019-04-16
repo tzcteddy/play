@@ -59,3 +59,4 @@
 |arc()||
 |arcTo()||
 |quadraticCurveTo()|二次贝塞尔曲线,曲线控制点坐标，锚点坐标|
+|bezierCurveTo()|三次贝塞尔曲线，曲线控制点坐标，曲线控制点坐标，锚点坐标|
