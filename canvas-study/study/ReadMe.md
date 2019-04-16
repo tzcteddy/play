@@ -49,6 +49,7 @@
 |createPattern(image,repeatString)|创建一个可以用来在canvas之中对图形<br>和文本进行描边和填充的图案<br>该方法第一个参数指定了图案所用的图像<br>它可以是image元素，canvas元素或者video元素；<br>第二个参数告诉浏览器对图形进行描边<br>或填充时如何重复图案,有效值repeat、repeat-x、repeat-y、no-repeat|
 |beginPath()||
 |closePath()||
+|isPointInPath()||
 |moveTo()||
 |lineTo()||
 |drawImage()||
