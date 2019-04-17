@@ -15,5 +15,7 @@ require.config({
     "quadratic":"common/apply_quadratic",
     "dragPolygon":"common/apply_dragPolygon",
     "bezier":"common/apply_bezier",
+    "globalCompositeOperation":"common/apply_globalCompositeOperation",
+    "clip":"common/apply_clip",
   }
 });

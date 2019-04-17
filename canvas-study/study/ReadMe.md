@@ -22,7 +22,7 @@
 |strokeStyle||
 |font||
 |globalAlpha||
-|globalCompsiteOperation||
+|globalCompositeOperation|改变默认的图片合成行为，圆(源物体)，正方形(目标物体)![图片合成](./image/globalCompositeOperation.png)|
 |lineCap||
 |lineWidth||
 |lineJoin||
@@ -59,4 +59,11 @@
 |arc()||
 |arcTo()||
 |quadraticCurveTo()|二次贝塞尔曲线,曲线控制点坐标，锚点坐标|
-|bezierCurveTo()|三次贝塞尔曲线，曲线控制点坐标，曲线控制点坐标，锚点坐标|
+|bezierCurveTo()|三次贝塞尔曲线，曲线控制点坐标，曲线控制点坐标，锚点坐标
+|translate(x,y)|移动坐标原点|
+|rotate()|旋转|
+|scale()|缩放|
+|shear()|错切|
+|transform()|当前变换矩阵叠加运用指定的变换效果|
+|setTransform()|将当前变换矩阵设置为默认的单位矩阵|
+|clip|剪辑区域|

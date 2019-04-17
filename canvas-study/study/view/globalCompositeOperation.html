@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片合成</title>
+    <script src="../js/libs/require.js"></script>
+    <style>
+        #canvas{
+            border: 1px solid cornflowerblue;
+            position: absolute;
+            left: 150px;
+            top: 10px;
+            background: #EEE;
+            border: thin solid #aaa;
+            cursor: pointer;
+            box-shadow: rgba(200,200,225,0.9) 5px 5px 10px;
+        }
+    </style>
+</head>
+<body>
+<select id="compositingSelect" size="11">
+    <option value="source-atop">source-atop</option>
+    <option value="source-in">source-in</option>
+    <option value="source-out">source-out</option>
+    <option value="source-over">source-over</option>
+    <option value="destination-atop">destination-atop</option>
+    <option value="destination-in">destination-in</option>
+    <option value="destination-out">destination-out</option>
+    <option value="destination-over">destination-over</option>
+    <option value="lighter">lighter</option>
+    <option value="copy">copy</option>
+    <option value="xor">xor</option>
+</select>
+<canvas id="canvas" width="600" height="420"></canvas>
+<script src="../js/config.js"></script>
+<script>
+    require(["globalCompositeOperation"])
+</script>
+</body>
+</html>
