@@ -34,8 +34,8 @@
 |shadowOffsetX||
 |shadowOffsetY||
 |shadowBlur||
-|textAlign||
-|textBaseline||
+|textAlign|该属性决定了文本在水平方向的对齐方式，有效值：start、left、center、right、end|
+|textBaseline|该属性决定了文本在垂直方向上的对齐方式，有效值：top、bottom、middle、alphabetic、ideographic、hanging|
 
 
 #### CanvasRenderingContext2D方法
