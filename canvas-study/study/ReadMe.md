@@ -23,7 +23,7 @@
 |canvas||
 |fillStyle||
 |strokeStyle||
-|font||
+|font|![font属性](./image/fontAttribut.png)|
 |globalAlpha||
 |globalCompositeOperation|改变默认的图片合成行为，圆(源物体)，正方形(目标物体)![图片合成](./image/globalCompositeOperation.png)|
 |lineCap||
