@@ -1,3 +1,6 @@
+/**
+ * 绘制多边形
+ * */
 let Polygon=function (centerX,centerY,radius,sides,startAngle,strokeStyle,fillStyle,filled) {
   this.x=centerX;
   this.y=centerY;

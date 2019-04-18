@@ -1,3 +1,4 @@
+
 let Paragraph=function (context,left,top,imageData,cursor) {
   this.context=context;
   this.left=left;
@@ -152,10 +153,10 @@ Paragraph.prototype={
     return this.lines[0]===this.activeLine;
   },
   moveUpOneLine:function () {
-    var lastActiveLine,lastActiveText,line,before,after;
+    var lastActiveLine,lastActiveText,line,before,after,activeIndex;
     lastActiveLine=this.activeLine;
     lastActiveText=""+lastActiveLine.text;
-    activeIndex=this.lines.indexOf(this.activeLine);
+     activeIndex=this.lines.indexOf(this.activeLine);
     this.activeLine=this.lines[activeIndex-1];
     this.activeLine.caret=this.activeLine.text.length;
 
@@ -189,7 +190,7 @@ Paragraph.prototype={
       w=this.context.measureText().width;
       this.moveCursor(this.activeLine.left+w,this.activeLine.bottom);
       this.draw(this.context);
-      context.restore();
+      this.context.restore();
     }
   }
 };
