@@ -17,5 +17,6 @@ require.config({
     "bezier":"common/apply_bezier",
     "globalCompositeOperation":"common/apply_globalCompositeOperation",
     "clip":"common/apply_clip",
+    "imageScale":"common/apply_imageScale",
   }
 });
