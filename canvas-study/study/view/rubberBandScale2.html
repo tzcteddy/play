@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>橡皮筋选取框2</title>
+    <script src="../js/libs/require.js"></script>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(30deg,#FFF,#8BFFFF,#B1FFFA);
+        }
+        #canvas{
+            margin-left: 20px;
+            margin-right: 0;
+            margin-bottom: 20px;
+            border:thin solid #aaaaaa;
+            cursor: crosshair;
+            padding: 0;
+        }
+        #controls{
+            margin: 20px 0 20px 20px;
+        }
+        #rubberbandDiv{
+            position: absolute;
+            border:3px solid blue;
+            cursor: crosshair;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="controls">
+    <input type="button" id="resetButton" value="reset">
+</div>
+<div id="rubberbandDiv"></div>
+<canvas id="canvas" width="800" height="520"></canvas>
+<script src="../js/config.js"></script>
+<script>
+  require(["rubberBandScale2"])
+</script>
+</body>
+</html>

@@ -5,6 +5,7 @@ require.config({
     "clock":'common/apply_clock',
     "mouseToCanvas":"common/apply_mouseToCanvas",
     "rubberBandScale":"common/apply_rubberBandScale",
+    "rubberBandScale2":"common/apply_rubberBandScale2",
     "gradient":"common/apply_gradient",
     "pattern":"common/apply_pattern",
     "shadow":"common/apply_shadow",
